@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int a[5], i, e;
+    printf("Enter any 5 values: \n");
+    for(i=0; i<5; i++)
+        scanf("%d", &a[i]);
+    printf("Enter the value to be searched: ");
+    scanf("%d", &e);
+    for(i=0; i<5; i++)
+    {
+        if(e == a[i])
+        {
+            printf("The number is at index number %d\n", i);
+            break; 
+        }
+    }
+    if(i == 5)  
+        printf("The number is not found in the array.\n");
+    return 0;  
+}
